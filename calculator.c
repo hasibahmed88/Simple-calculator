@@ -23,7 +23,7 @@ float divide(float a,float b)
 
 int main()
 {
-    printf("Enter calculate ('+ - * /') : ");
+    printf("Enter calculate ('+ - * /') : _ to Exit  ");
     char calculate;
     scanf("%ch",&calculate);
 
@@ -54,10 +54,13 @@ int main()
         case '/':
         printf("Result is : %.2f\n",divide_result);
         break;
-
+        
+        case '_':
+        printf("\n Thanks For Using Our Calculator ! ");
+        break;
+            
         default:
-            printf("Unknown sign!");
-            break;
+        printf("Unknown sign!");
     }
 
     return 0;
